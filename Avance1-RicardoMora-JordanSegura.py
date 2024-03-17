@@ -27,11 +27,13 @@ while main_while:
         print("yes")
     elif main_opcion=="4":
         print(f"""
+------------------------------------------------------
 ¿Cual es el impacto ambiental de la Huella de Carbono?
-
-La huella de carbono es una medida del impacto ambiental directo e indirecto de las
-actividades humanas en términos de las emisiones de gases de efecto invernadero, 
-expresadas como equivalentes de dióxido de carbono (CO2e). Su impacto ambiental es
-significativo y multifacético:""")
+------------------------------------------------------
+La huella de carbono representa el impacto ambiental de las actividades humanas en 
+términos de emisiones de gases de efecto invernadero. Este impacto incluye el cambio 
+climático,acidificación oceánica, degradación de ecosistemas, pérdida de biodiversidad
+y costos socioeconómicos. Reducir la huella de carbono es crucial para mitigar estos
+impactos y proteger el medio ambiente y las comunidades humanas.""")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
