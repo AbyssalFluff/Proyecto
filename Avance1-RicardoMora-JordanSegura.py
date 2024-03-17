@@ -1,8 +1,11 @@
 #Avance 01 de proyecto de Programacion en Python
 #Creado por Ricardo Mora y Jordan Segura
-print("Bienvenido a ")
+usuarios=[]
+print("Bienvenido a EcoFriendly!")
 main_while=True
 while main_while:
+    nombre=input("Antes de comenzar...\nEscribe tu nombre: ")
+    usuarios.append(nombre)
     print("""
         0. Salir
         1.
