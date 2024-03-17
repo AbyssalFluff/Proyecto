@@ -41,7 +41,8 @@ Mejorar tu huella de carbono implica reducir las emisiones de gases de efecto in
 tus actividades diarias. Puedes lograrlo mediante la reducción del consumo de energía, adoptando
 transporte sostenible, practicando la reducción, reutilización y reciclaje, modificando tu dieta 
 hacia opciones más basadas en plantas, apoyando las energías renovables, conservando el agua y 
-educándote sobre tus impactos ambientales. Cada pequeña acción contribuye a la mitigación del cambio climático.""")
+educándote sobre tus impactos ambientales. Cada pequeña acción contribuye a la mitigación del
+cambio climático.""")
     elif main_opcion=="4":
         print(f"""
           ------------------------------------------------------
