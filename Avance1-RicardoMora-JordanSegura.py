@@ -11,5 +11,7 @@ while main_while:
     main_opcion=input("A donde quieres ir? ")
     if main_opcion==0:
         main_while=False
+    if main_opcion==1:
+        print("si")
     else:
         print("Lo sentimos... Esa opcion no esta disponible.")
