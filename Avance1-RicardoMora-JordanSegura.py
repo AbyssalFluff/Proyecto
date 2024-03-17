@@ -4,8 +4,6 @@ usuarios=[]
 print("Bienvenido a EcoFriendly!")
 main_while=True
 while main_while:
-    nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
-    usuarios.append(nombre)
     print("Opciones de Menú:")
     print("""
         0. Salir
@@ -19,9 +17,11 @@ while main_while:
         main_while=False
     elif main_opcion=="1":
         print("¿Que es la Huella de Carbono?")
-        print(f"{nombre}, la huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI) emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio a lo largo de su ciclo de vida.")
+        print("La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI) emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio a lo largo de su ciclo de vida.")
 
     elif main_opcion=="2":
+        nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
+        usuarios.append(nombre)
         print("no")
     elif main_opcion=="3":
         print("yes")
