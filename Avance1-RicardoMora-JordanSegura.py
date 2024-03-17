@@ -17,9 +17,9 @@ while main_while:
         main_while=False
     elif main_opcion=="1":
         print("""
------------------------------
-¿Que es la Huella de Carbono?
------------------------------
+                            -----------------------------
+                            Que es la Huella de Carbono?
+                            -----------------------------
 
 La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI)
 emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio
@@ -33,9 +33,9 @@ equivalente (CO2e) emitido.""")
         print("no")
     elif main_opcion=="3":
         print("""
------------------------------------
-                ¿Como mejorar tu Huella de Carbono?
-           -----------------------------------
+                        -----------------------------------
+                        ¿Como mejorar tu Huella de Carbono?
+                        -----------------------------------
 
 Mejorar tu huella de carbono implica reducir las emisiones de gases de efecto invernadero en
 tus actividades diarias. Puedes lograrlo mediante la reducción del consumo de energía, adoptando
