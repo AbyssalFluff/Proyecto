@@ -34,8 +34,8 @@ equivalente (CO2e) emitido.""")
     elif main_opcion=="3":
         print("""
 -----------------------------------
-¿Como mejorar tu Huella de Carbono?
------------------------------------
+                ¿Como mejorar tu Huella de Carbono?
+           -----------------------------------
 
 Mejorar tu huella de carbono implica reducir las emisiones de gases de efecto invernadero en
 tus actividades diarias. Puedes lograrlo mediante la reducción del consumo de energía, adoptando
