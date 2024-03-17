@@ -3,11 +3,12 @@
 print("Bienvenido a ")
 main_while=True
 while main_while:
-    print("""\n0. Exit
-1.
-2.
-3.
-4.""")
+    print("""
+        0. Salir
+        1.
+        2.
+        3.
+        4.""")
     main_opcion=input("A donde quieres ir? ")
     if main_opcion=="0":
         main_while=False
