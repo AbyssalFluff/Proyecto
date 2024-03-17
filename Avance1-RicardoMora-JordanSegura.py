@@ -16,8 +16,11 @@ while main_while:
         print("Gracias por ser uno más en ayudar el bienestar del Mundo.")
         main_while=False
     elif main_opcion=="1":
-        print("¿Que es la Huella de Carbono?")
-        print("La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI) emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio a lo largo de su ciclo de vida.")
+        print("""¿Que es la Huella de Carbono?
+
+La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI)
+emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio
+a lo largo de su ciclo de vida.""")
 
     elif main_opcion=="2":
         nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
