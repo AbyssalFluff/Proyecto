@@ -12,7 +12,7 @@ while main_while:
         1. ¿Que es la Huella de Carbono?
         2. Calcula tu Huella de Carbono
         3. ¿Como mejorar tu Huella de Carbono?
-        4. ¿Cual es el impacto ambiental de la Huella de Carbono?""")
+        4. ¿Cual es el impacto ambiental de la Huella de Carbono?""") #saiudgsauidgasouidgu
     main_opcion=input("A donde quieres ir? ")
     if main_opcion=="0":
         print("Gracias por ser uno más para el bienestar del Mundo.")
