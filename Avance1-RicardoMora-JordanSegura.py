@@ -8,9 +8,9 @@ while main_while:
     usuarios.append(nombre)
     print("""
         0. Salir
-        1.
-        2.
-        3.
+        1. Que es la Huella de Carbono
+        2. Calcula tu Huella de Carbono
+        3. Como mejorar tu Huella de Carbono
         4.""")
     main_opcion=input("A donde quieres ir? ")
     if main_opcion=="0":
