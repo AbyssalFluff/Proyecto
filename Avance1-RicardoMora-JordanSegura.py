@@ -17,7 +17,9 @@ while main_while:
         main_while=False
     elif main_opcion=="1":
         print("""
+-----------------------------
 ¿Que es la Huella de Carbono?
+-----------------------------
 
 La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI)
 emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio
