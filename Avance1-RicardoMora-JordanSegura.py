@@ -9,9 +9,15 @@ while main_while:
 3.
 4.""")
     main_opcion=input("A donde quieres ir? ")
-    if main_opcion==0:
+    if main_opcion=="0":
         main_while=False
-    if main_opcion==1:
+    elif main_opcion=="1":
         print("si")
+    elif main_opcion=="2":
+        print("no")
+    elif main_opcion=="3":
+        print("yes")
+    elif main_opcion=="4":
+        print("no")
     else:
-        print("Lo sentimos... Esa opcion no esta disponible.")
+        print("\nLo sentimos... Esa opcion no esta disponible.")
