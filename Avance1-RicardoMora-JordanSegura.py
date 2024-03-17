@@ -12,7 +12,7 @@ while main_while:
         1. ¿Que es la Huella de Carbono?
         2. Calcula tu Huella de Carbono
         3. ¿Como mejorar tu Huella de Carbono?
-        4. ¿Cual es el impacto ambiental de la Huella de Carbono?""") #saiudgsauidgasouidgu
+        4. ¿Cual es el impacto ambiental de la Huella de Carbono?""") 
     main_opcion=input("A donde quieres ir? ")
     if main_opcion=="0":
         print("Gracias por ser uno más para el bienestar del Mundo.")
@@ -24,6 +24,13 @@ while main_while:
     elif main_opcion=="3":
         print("yes")
     elif main_opcion=="4":
-        print("no")
+        print(f"""
+              ¿Cual es el impacto ambiental de la Huella de Carbono?
+              
+              La huella de carbono es una medida del impacto ambiental directo e indirecto de las
+              actividades humanas en términos de las emisiones de gases de efecto invernadero, 
+              expresadas como equivalentes de dióxido de carbono (CO2e). Su impacto ambiental es
+              significativo y multifacético:
+              """)
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
