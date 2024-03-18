@@ -68,10 +68,10 @@ equivalente (CO2e) emitido.""")
               
         elif vehiculo_lower=="no":
             print("¿Qué medio de transporte utiliza?")
-            transporte=input(""""
-1. Tren
-2. Bus
-3. Taxi""")
+            transporte_tipo=input("""
+1. Gasolina
+2. Eléctrico
+3. Híbrido\n""")
             if transporte=="1":
                 
         else:
