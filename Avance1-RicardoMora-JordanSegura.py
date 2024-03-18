@@ -38,7 +38,8 @@ equivalente (CO2e) emitido.""")
 2. Eléctrico
 3. Híbrido\n""")
         elif vehiculo_lower=="no":
-            print("no")
+            print("¿Qué medio de transporte utiliza?")
+            
         else:
             print("Esa no es una opción")
     elif main_opcion=="3":
