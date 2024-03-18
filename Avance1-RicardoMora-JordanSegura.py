@@ -34,12 +34,17 @@ equivalente (CO2e) emitido.""")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
             print("¿Qué tipo de vehículo posee?")
-            vehiculo_tipo=input("""1. Gasolina
+            vehiculo_tipo=input("""
+1. Gasolina
 2. Eléctrico
 3. Híbrido\n""")
         elif vehiculo_lower=="no":
             print("¿Qué medio de transporte utiliza?")
-            
+            transporte=input(""""
+1. Tren
+2. Bus
+3. Taxi
+4. Caminando""")
         else:
             print("Esa no es una opción")
     elif main_opcion=="3":
