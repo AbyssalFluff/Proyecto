@@ -8,7 +8,10 @@ print("""
                 ==========================""")
 main_while=True
 while main_while:
-    print("Opciones de Menú:") 
+    print("""
+        -------------------
+        |Opciones de Menú:|
+        -------------------""") 
     print("""
         0. Salir
         1. ¿Que es la Huella de Carbono?
