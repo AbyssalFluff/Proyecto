@@ -35,8 +35,8 @@ equivalente (CO2e) emitido.""")
         if vehiculo_lower=="si":
             print("¿Qué tipo de vehículo posee?")
             vehiculo_tipo=input("""1. Gasolina
-            2. Eléctrico
-            3. Híbrido\n""")
+2. Eléctrico
+3. Híbrido\n""")
         elif vehiculo_lower=="no":
             print("no")
         else:
