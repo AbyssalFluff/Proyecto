@@ -2,6 +2,7 @@
 #Creado por Ricardo Mora y Jordan Segura
 usuarios=[]
 gasolina=["Carro","Moto","Camión"]
+gasolina_transporte=["Bus","Tren","Taxi"]
 electrico=["Carro","Moto"]
 print("""
                   ==========================
@@ -79,8 +80,30 @@ equivalente (CO2e) emitido.""")
 1. Gasolina
 2. Eléctrico
 3. Híbrido\n""")
-            if transporte=="1":
-                print("si")
+            if transporte_tipo=="1":
+              for tipo in gasolina:
+                  print(tipo)
+                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+                if tipo_gas in gasolina:
+                  co2_vehiculo="345 kg de CO2"
+                  print(co2_vehiculo)
+                else:
+                    print("Ese vehículo no está disponible")
+                  
+            elif vehiculo_tipo=="2":
+              for tipo in electrico:
+                print(tipo)
+              tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+              if tipo_electrico in electrico:
+                co2_vehiculo="172 kg de CO2"
+                print(co2_vehiculo)
+              else:
+                print("Ese vehículo no está disponible")
+              
+            elif vehiculo_tipo=="3":
+              co2_vehiculo="172 kg de CO2"
+              print(co2_vehiculo)
+              
             else:
               print("Esa no es una opción.")
     elif main_opcion=="3":
