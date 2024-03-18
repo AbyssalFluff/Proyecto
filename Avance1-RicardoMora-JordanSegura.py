@@ -1,6 +1,7 @@
 #Avance 01 del proyecto de Programación en Python
 #Creado por Ricardo Mora y Jordan Segura
 usuarios=[]
+gasolina=["Carro","Moto","Camión"]
 print("Bienvenido a EcoFriendly!")
 main_while=True
 while main_while:
