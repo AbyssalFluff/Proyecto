@@ -2,6 +2,7 @@
 #Creado por Ricardo Mora y Jordan Segura
 usuarios=[]
 gasolina=["Carro","Moto","Camión"]
+electrico=["Carro","Moto"]
 print("""
                   ==========================
                   =Bienvenido a EcoFriendly=
@@ -53,8 +54,18 @@ equivalente (CO2e) emitido.""")
                     co2_vehiculo="345 kg de CO2"
                 else:
                     print("Ese vehículo no está disponible")
+                  
+            if vehiculo_tipo=="2":
+              for tipo in electrico:
+                    print(tipo)
+              tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+              if tipo_electrico in electrico:
+                  co2_vehiculo="172 kg de CO2"
+              else:
+                  print("Ese vehículo no está disponible")
             else:
                 print("Esa no es una opción.")
+              
         elif vehiculo_lower=="no":
             print("¿Qué medio de transporte utiliza?")
             transporte=input(""""
