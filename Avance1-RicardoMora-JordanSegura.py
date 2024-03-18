@@ -45,7 +45,6 @@ equivalente (CO2e) emitido.""")
                 tipo_gas=input("¿Qué tipo de vehículo utiliza?")
                 if tipo_gas in gasolina:
                     co2_vehiculo="345 kg de CO2"
-                    
                 else:
                     print("Ese vehículo no está disponible")
             else:
