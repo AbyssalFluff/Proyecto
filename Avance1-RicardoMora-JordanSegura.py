@@ -5,7 +5,7 @@ gasolina=["Carro","Moto","Camión"]
 print("Bienvenido a EcoFriendly!")
 main_while=True
 while main_while:
-    print("Opciones de Menú:")
+    print("Opciones de Menú:") 
     print("""
         0. Salir
         1. ¿Que es la Huella de Carbono?
@@ -35,7 +35,8 @@ equivalente (CO2e) emitido.""")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
             print("¿Qué tipo de vehículo posee?")
-            vehiculo_tipo=input("""1. Gasolina
+            vehiculo_tipo=input("""
+1. Gasolina
 2. Eléctrico
 3. Híbrido\n""")
             if vehiculo_tipo=="1":
