@@ -28,25 +28,14 @@ a lo largo de su ciclo de vida.
 
 La huella de carbono se expresa generalmente en términos de la cantidad de dióxido de carbono
 equivalente (CO2e) emitido.""")
-    elif main_opcion=="2":
-        nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
-        usuarios.append(nombre)
-        vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
-        vehiculo_lower=vehiculo.lower()
-        if vehiculo_lower=="si":
-            print("¿Qué tipo de vehículo posee?")
-            vehiculo_tipo=input("""
-1. Gasolina
-2. Eléctrico
-3. Híbrido\n""")
-            elif main_opcion=="2":
-        nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
-        usuarios.append(nombre)
-        vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
-        vehiculo_lower=vehiculo.lower()
-        if vehiculo_lower=="si":
-            print("¿Qué tipo de vehículo posee?")
-            vehiculo_tipo=input("""1. Gasolina
+        elif main_opcion=="2":
+            nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
+            usuarios.append(nombre)
+            vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
+            vehiculo_lower=vehiculo.lower()
+            if vehiculo_lower=="si":
+                print("¿Qué tipo de vehículo posee?")
+                vehiculo_tipo=input("""1. Gasolina
 2. Eléctrico
 3. Híbrido\n""")
             if vehiculo_tipo=="1":
