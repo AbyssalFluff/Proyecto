@@ -54,8 +54,9 @@ equivalente (CO2e) emitido.""")
             transporte=input(""""
 1. Tren
 2. Bus
-3. Taxi
-4. Caminando""")
+3. Taxi""")
+            if transporte=="1":
+                
         else:
             print("Esa no es una opción.")
     elif main_opcion=="3":
