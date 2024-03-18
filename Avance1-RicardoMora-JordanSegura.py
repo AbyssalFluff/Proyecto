@@ -90,7 +90,7 @@ equivalente (CO2e) emitido.""")
                 else:
                     print("Ese vehículo no está disponible")
                   
-            elif vehiculo_tipo=="2":
+            elif transporte_tipo=="2":
               for tipo in transporte:
                 print(tipo)
               tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
@@ -100,7 +100,7 @@ equivalente (CO2e) emitido.""")
               else:
                 print("Ese vehículo no está disponible")
               
-            elif vehiculo_tipo=="3":
+            elif transporte_tipo=="3":
               co2_vehiculo="172 kg de CO2"
               print(co2_vehiculo)
               
