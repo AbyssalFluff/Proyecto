@@ -3,9 +3,9 @@
 usuarios=[]
 gasolina=["Carro","Moto","Camión"]
 print("""
-                ==========================
-                =Bienvenido a EcoFriendly=
-                ==========================""")
+                  ==========================
+                  =Bienvenido a EcoFriendly=
+                  ==========================""")
 main_while=True
 while main_while:
     print("""
