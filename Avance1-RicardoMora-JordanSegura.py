@@ -30,7 +30,14 @@ equivalente (CO2e) emitido.""")
     elif main_opcion=="2":
         nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
         usuarios.append(nombre)
-        print("no")
+        vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
+        vehiculo_lower=vehiculo.lower()
+        if vehiculo_lower=="si":
+            print("si")
+        elif vehiculo_lower=="no":
+            print("no")
+        else:
+            print("Esa no es una opción")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
