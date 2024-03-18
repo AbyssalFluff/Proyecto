@@ -48,6 +48,8 @@ equivalente (CO2e) emitido.""")
                     print("si")
                 else:
                     print("Ese vehículo no está disponible")
+            else:
+                print("Esa no es una opción.")
         elif vehiculo_lower=="no":
             print("¿Qué medio de transporte utiliza?")
             transporte=input(""""
@@ -56,7 +58,7 @@ equivalente (CO2e) emitido.""")
 3. Taxi
 4. Caminando""")
         else:
-            print("Esa no es una opción")
+            print("Esa no es una opción.")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
