@@ -44,7 +44,10 @@ equivalente (CO2e) emitido.""")
                     print(tipo)
                 tipo_gas=input("¿Qué tipo de vehículo utiliza?")
                 if tipo_gas in gasolina:
-                    print("si")
+                    litros=int(input("¿Cuantos litros de gasolina consume su vehículo?"))
+                    kilometros=int(input("¿Cuantos kilometros reccorrió en su vehiculo?"))
+                    
+                    
                 else:
                     print("Ese vehículo no está disponible")
             else:
