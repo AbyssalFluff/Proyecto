@@ -2,7 +2,10 @@
 #Creado por Ricardo Mora y Jordan Segura
 usuarios=[]
 gasolina=["Carro","Moto","Camión"]
-print("Bienvenido a EcoFriendly!")
+print("""
+                ==========================
+                =Bienvenido a EcoFriendly=
+                ==========================""")
 main_while=True
 while main_while:
     print("Opciones de Menú:") 
