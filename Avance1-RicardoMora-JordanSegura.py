@@ -48,24 +48,27 @@ equivalente (CO2e) emitido.""")
 3. Híbrido\n""")
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
-                    print(tipo)
+                  print(tipo)
                 tipo_gas=input("¿Qué tipo de vehículo utiliza?")
                 if tipo_gas in gasolina:
-                    co2_vehiculo="345 kg de CO2"
+                  co2_vehiculo="345 kg de CO2"
+                  print(co2_vehiculo)
                 else:
                     print("Ese vehículo no está disponible")
                   
             elif vehiculo_tipo=="2":
               for tipo in electrico:
-                    print(tipo)
+                print(tipo)
               tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
               if tipo_electrico in electrico:
-                  co2_vehiculo="172 kg de CO2"
+                co2_vehiculo="172 kg de CO2"
+                print(co2_vehiculo)
               else:
-                  print("Ese vehículo no está disponible")
+                print("Ese vehículo no está disponible")
               
             elif vehiculo_tipo=="3":
               co2_vehiculo="172 kg de CO2"
+              print(co2_vehiculo)
               
             else:
               print("Esa no es una opción.")
@@ -77,9 +80,9 @@ equivalente (CO2e) emitido.""")
 2. Eléctrico
 3. Híbrido\n""")
             if transporte=="1":
-                
-        else:
-            print("Esa no es una opción.")
+                print("si")
+            else:
+              print("Esa no es una opción.")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
