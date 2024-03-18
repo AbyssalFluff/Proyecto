@@ -43,8 +43,7 @@ equivalente (CO2e) emitido.""")
                 for tipo in gasolina:
                     print(tipo)
                 tipo_gas=input("¿Qué tipo de vehículo utiliza?")
-                tipo_gas_lower=tipo_gas.lower()
-                if tipo_gas_lower in gasolina:
+                if tipo_gas in gasolina:
                     print("si")
                 else:
                     print("Ese vehículo no está disponible")
