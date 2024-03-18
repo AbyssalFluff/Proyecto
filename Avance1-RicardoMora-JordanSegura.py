@@ -39,6 +39,25 @@ equivalente (CO2e) emitido.""")
 1. Gasolina
 2. Eléctrico
 3. Híbrido\n""")
+            elif main_opcion=="2":
+        nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
+        usuarios.append(nombre)
+        vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
+        vehiculo_lower=vehiculo.lower()
+        if vehiculo_lower=="si":
+            print("¿Qué tipo de vehículo posee?")
+            vehiculo_tipo=input("""1. Gasolina
+2. Eléctrico
+3. Híbrido\n""")
+            if vehiculo_tipo=="1":
+                for tipo in gasolina:
+                    print(tipo)
+                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+                tipo_gas_lower=tipo_gas.lower()
+                if tipo_gas_lower in gasolina:
+                    print("si")
+                else:
+                    print("Ese vehículo no está disponible")
         elif vehiculo_lower=="no":
             print("¿Qué medio de transporte utiliza?")
             transporte=input(""""
