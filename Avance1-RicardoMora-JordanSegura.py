@@ -157,7 +157,7 @@ while main_while:
       ¿Deseas "agregar" o "eliminar" algún usuario?
       Puedes escribir las palabras entre "" para confimar
       Puedes escribir "exit" para salir""")
-      editar_usuarios_lower==editar_usuarios.lower()
+      editar_usuarios_lower=editar_usuarios.lower()
       if editar_usuarios_lower=="agregar":
         print("agregar")
       elif editar_usuarios_lower=="eliminar":
