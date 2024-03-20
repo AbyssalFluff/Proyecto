@@ -52,13 +52,16 @@ while main_while:
         vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
-            print("¿Qué tipo de vehículo posee?")
+            print("""
+===================================
+=¿Qué medio de transporte utiliza?=
+===================================""")
             transporte_tipo=input("""
-*****************
+-----------------
 * 1. Gasolina   *
 * 2. Eléctrico  *
 * 3. Híbrido    *
-*****************""")
+-----------------""")
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
                   print(tipo)
