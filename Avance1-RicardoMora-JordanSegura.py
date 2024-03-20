@@ -150,7 +150,8 @@ while main_while:
       for chingadera in objetos:
         print(chingadera)
     elif main_opcion == "6":
+      print("Observa los usuarios registrados")
       for usuario in usuarios:
-        print(usuario, end=' ')
+        print(usuario, end=' ', sep=',')
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
