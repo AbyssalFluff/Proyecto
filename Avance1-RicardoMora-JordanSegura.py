@@ -100,7 +100,7 @@ while main_while:
           ===================================
           =¿Qué medio de transporte utiliza?=
           ===================================""")
-            vehiculo_tipo=input("""
+            transporte_tipo=input("""
     -----------------
     * 1. Gasolina   *
     * 2. Eléctrico  *
@@ -139,7 +139,7 @@ while main_while:
             print("Esa no es una opción.")
         print(f"""
         Usuario: {users_co2["usuario"]}
-        CO2: {{users_co2["co2"]}""")
+        CO2: {users_co2["co2"]}""")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
@@ -196,6 +196,6 @@ while main_while:
         elif editar_usuarios_lower=="exit":
             continue
         else:
-        print("Esa no es una opción.")
+            print("Esa no es una opción.")
     else:
         print("Lo sentimos... Esa opcion no esta disponible.")
