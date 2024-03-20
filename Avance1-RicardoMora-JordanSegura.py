@@ -171,4 +171,4 @@ while main_while:
       else:
         print("Esa no es una opción.")
     else:
-        print("\nLo sentimos... Esa opcion no esta disponible.")
+        print("Lo sentimos... Esa opcion no esta disponible.")
