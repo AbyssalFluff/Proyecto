@@ -154,6 +154,6 @@ while main_while:
       for usuario in usuarios:
         print(usuario)
       print()
-      print('¿Deseas "agregar" o "eliminar" algún usuario?\nPuedes escribir las palabras entre "" para confimar\nPuedes escribir "exit" para salir\n')
+      print('''¿Deseas "agregar" o "eliminar" algún usuario?\nPuedes escribir las palabras entre "" para confimar\nPuedes escribir "exit" para salir\n''')
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
