@@ -40,7 +40,9 @@ emitidos directa o indirectamente por un individuo, organización, evento, produ
 a lo largo de su ciclo de vida.
 
 La huella de carbono se expresa generalmente en términos de la cantidad de dióxido de carbono
-equivalente (CO2e) emitido.""")
+equivalente (CO2e) emitido.
+...................................................................................................
+""")
     elif main_opcion=="2":
         nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
         usuarios.append(nombre)
@@ -116,22 +118,27 @@ equivalente (CO2e) emitido.""")
                         -----------------------------------
                         ¿Como mejorar tu Huella de Carbono?
                         -----------------------------------
-
-Mejorar tu huella de carbono implica reducir las emisiones de gases de efecto invernadero en
-tus actividades diarias. Puedes lograrlo mediante la reducción del consumo de energía, adoptando
-transporte sostenible, practicando la reducción, reutilización y reciclaje, modificando tu dieta 
-hacia opciones más basadas en plantas, apoyando las energías renovables, conservando el agua y 
-educándote sobre tus impactos ambientales. Cada pequeña acción contribuye a la mitigación del
-cambio climático.""")
+....................................................................................................
+. Mejorar tu huella de carbono implica reducir las emisiones de gases de efecto invernadero en     .
+. tus actividades diarias. Puedes lograrlo mediante la reducción del consumo de energía, adoptando .
+. transporte sostenible, practicando la reducción, reutilización y reciclaje, modificando tu dieta .
+. hacia opciones más basadas en plantas, apoyando las energías renovables, conservando el agua y   .
+. educándote sobre tus impactos ambientales. Cada pequeña acción contribuye a la mitigación del    .
+. cambio climático.                                                                                .
+....................................................................................................
+""")                                                                           
     elif main_opcion=="4":
         print(f"""
-          ------------------------------------------------------
-          ¿Cual es el impacto ambiental de la Huella de Carbono?
-          ------------------------------------------------------
-La huella de carbono representa el impacto ambiental de las actividades humanas en 
-términos de emisiones de gases de efecto invernadero. Este impacto incluye el cambio 
-climático,acidificación oceánica, degradación de ecosistemas, pérdida de biodiversidad
-y costos socioeconómicos. Reducir la huella de carbono es crucial para mitigar estos
-impactos y proteger el medio ambiente y las comunidades humanas.""")
+            ------------------------------------------------------
+            ¿Cual es el impacto ambiental de la Huella de Carbono?
+            ------------------------------------------------------
+....................................................................................................
+. La huella de carbono representa el impacto ambiental de las actividades humanas en               .
+. términos de emisiones de gases de efecto invernadero. Este impacto incluye el cambio             .
+. climático,acidificación oceánica, degradación de ecosistemas, pérdida de biodiversidad           .
+. y costos socioeconómicos. Reducir la huella de carbono es crucial para mitigar estos             .
+. impactos y proteger el medio ambiente y las comunidades humanas.                                 .
+....................................................................................................
+""")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
