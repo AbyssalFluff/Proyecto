@@ -141,5 +141,8 @@ while main_while:
 . impactos y proteger el medio ambiente y las comunidades humanas.                                 .
 ....................................................................................................
 """)
+    elif main_opcion=="5":
+      print(f"""
+      """)
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
