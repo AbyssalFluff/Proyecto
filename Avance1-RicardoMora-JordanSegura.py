@@ -21,6 +21,7 @@ while main_while:
         * 2. Calcula tu Huella de Carbono                               *
         * 3. ¿Como mejorar tu Huella de Carbono?                        *
         * 4. ¿Cual es el impacto ambiental de la Huella de Carbono?     *
+        * 5. Objetos que dejan mayor Huella de Carbono                  *
         *****************************************************************
         """)
     main_opcion=input("""
