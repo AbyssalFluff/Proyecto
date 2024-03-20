@@ -178,7 +178,7 @@ while main_while:
         editar_usuarios=input(f"""
       ¿Deseas "agregar" o "eliminar" algún usuario?
       Puedes escribir las palabras entre "" para confimar
-      Puedes escribir "exit" para salir""")
+      Puedes escribir "exit" para salir\n""")
         editar_usuarios_lower=editar_usuarios.lower()
         if editar_usuarios_lower=="agregar":
             add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
