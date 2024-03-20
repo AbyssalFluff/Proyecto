@@ -4,6 +4,7 @@ usuarios=[]
 gasolina=["Carro","Moto","Camión"]
 transporte=["Bus","Tren","Taxi"]
 electrico=["Carro","Moto"]
+objetos=("Vehículos","Electrodomésticos","Edificios","Productos de plástico","Productos de papel")
 print("""
                   ==========================
                   =Bienvenido a EcoFriendly=
