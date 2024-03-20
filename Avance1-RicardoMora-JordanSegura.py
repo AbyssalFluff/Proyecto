@@ -143,7 +143,8 @@ while main_while:
 ....................................................................................................
 """)
     elif main_opcion=="5":
-      print(f"""
-      """)
+      print("Objetos que dejan mayor Huella de Carbono")
+      for chingadera in objetos:
+        print(chingadera)
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
