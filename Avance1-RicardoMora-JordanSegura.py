@@ -161,6 +161,9 @@ while main_while:
       if editar_usuarios_lower=="agregar":
         add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
         usuarios.append(add_usuarios)
+        print("Esta es la lista con el usuario agregado: ")
+        for usuario in usuarios:
+          print(usuario, end=", ")
       elif editar_usuarios_lower=="eliminar":
         print("elimina")
       elif editar_usuarios_lower=="exit":
