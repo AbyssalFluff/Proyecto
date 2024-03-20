@@ -153,7 +153,9 @@ while main_while:
       print("Observa los usuarios registrados")
       for usuario in usuarios:
         print(usuario)
-      print()
-      print(f"""¿Deseas "agregar" o "eliminar" algún usuario?\nPuedes escribir las palabras entre "" para confimar\nPuedes escribir "exit" para salir\n""")
+      print(f"""
+      ¿Deseas "agregar" o "eliminar" algún usuario?
+      Puedes escribir las palabras entre "" para confimar
+      Puedes escribir "exit" para salir\n""")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
