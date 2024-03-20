@@ -92,13 +92,13 @@ while main_while:
 3. Híbrido\n""")
             if transporte_tipo=="1":
               for tipo in transporte:
-                  print(tipo)
-                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
-                if tipo_gas in transporte:
-                  co2_vehiculo="345 kg de CO2"
-                  print(co2_vehiculo)
-                else:
-                    print("Ese vehículo no está disponible")
+                print(tipo)
+              tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+              if tipo_gas in transporte:
+                co2_vehiculo="345 kg de CO2"
+                print(co2_vehiculo)
+              else:
+                print("Ese vehículo no está disponible")
                   
             elif transporte_tipo=="2":
               for tipo in transporte:
