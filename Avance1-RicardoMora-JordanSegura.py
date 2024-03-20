@@ -156,6 +156,6 @@ while main_while:
       print(f"""
       ¿Deseas "agregar" o "eliminar" algún usuario?
       Puedes escribir las palabras entre "" para confimar
-      Puedes escribir "exit" para salir\n""")
+      Puedes escribir "exit" para salir""")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
