@@ -152,6 +152,8 @@ while main_while:
     elif main_opcion == "6":
       print("Observa los usuarios registrados")
       for usuario in usuarios:
-        print(usuario, end=' ', sep=',')
+        print(usuario)
+      print()
+      print('¿Deseas "agregar" o "eliminar" algún usuario?'\nPuedes escribir las palabras entre "" para confimar\nPuedes escribir "exit" para salir\n)
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
