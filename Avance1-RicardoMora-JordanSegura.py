@@ -56,17 +56,18 @@ while main_while:
           ===================================
           =¿Qué medio de transporte utiliza?=
           ===================================""")
-            transporte_tipo=input("""
+            vehiculo_tipo=input("""
     -----------------
     * 1. Gasolina   *
     * 2. Eléctrico  *
     * 3. Híbrido    *
     -----------------
     Elija una opción: """)
+            print()
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
                   print(tipo)
-                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+                tipo_gas=input("¿Escriba el tipo de vehículo que utiliza?")
                 if tipo_gas in gasolina:
                   co2_vehiculo="345 kg de CO2"
                   print(co2_vehiculo)
