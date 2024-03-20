@@ -138,6 +138,7 @@ while main_while:
         else:
             print("Esa no es una opción.")
         print(f"""
+        Aquí esta tus datos {nombre}
         Usuario: {users_co2["usuario"]}
         CO2: {users_co2["co2"]}""")
     elif main_opcion=="3":
@@ -183,14 +184,14 @@ while main_while:
         if editar_usuarios_lower=="agregar":
             add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
             usuarios.append(add_usuario)
-            print("Esta es la lista con el usuario agregado: ")
+            print("\nEsta es la lista con el usuario agregado: ")
             for usuario in usuarios:
                 print(usuario, end=", ")
         elif editar_usuarios_lower=="eliminar":
             del_usuario=input("Escribe el usuario que quieres eliminar: ")
             if del_usuario in usuarios:
                 usuarios.remove(del_usuario)
-                print(f"Se ha eliminado {del_usuario} de los usuarios:")
+                print(f"\nSe ha eliminado {del_usuario} de los usuarios:")
                 for usuario in usuarios:
                     print(usuario)
         elif editar_usuarios_lower=="exit":
