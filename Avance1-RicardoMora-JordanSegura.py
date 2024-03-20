@@ -56,7 +56,7 @@ while main_while:
             vehiculo_tipo=input("""
 1. Gasolina
 2. Eléctrico
-3. Híbrido\n""")
+3. Híbrido""")
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
                   print(tipo)
