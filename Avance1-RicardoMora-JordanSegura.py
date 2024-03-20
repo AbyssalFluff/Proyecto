@@ -116,6 +116,8 @@ while main_while:
               
             else:
               print("Esa no es una opción.")
+        else:
+          print("Esa no es una opción.")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
@@ -147,8 +149,8 @@ while main_while:
       print("Objetos que dejan mayor Huella de Carbono")
       for chingadera in objetos:
         print(chingadera)
-    elif main_opcion=="6":
-      for nombre in usuarios:
-        print(nombre, sep=", ")
+    elif main_opcion == "6":
+      for usuario in usuarios:
+        print(usuario, end=' ')
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
