@@ -5,13 +5,13 @@ gasolina=["Carro","Moto","Camión"]
 transporte=["Bus","Tren","Taxi"]
 electrico=["Carro","Moto"]
 objetos=("Vehículos","Electrodomésticos","Edificios","Productos de plástico","Productos de papel")
-users_co2={"Usuario":"","CO2":""}
 print("""
                   ==========================
                   =Bienvenido a EcoFriendly=
                   ==========================""")
 main_while=True
 while main_while:
+    users_co2={"usuario":"","co2":""}
     print("""
         -------------------
         |Opciones de Menú:|
@@ -50,6 +50,7 @@ while main_while:
     elif main_opcion=="2":
         nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
         usuarios.append(nombre)
+        users_co2["usuario"]=nombre
         vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
@@ -67,30 +68,32 @@ while main_while:
             print()
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
-                  print(tipo)
+                    print(tipo)
                 tipo_gas=input("¿Escriba el tipo de vehículo que utiliza?")
                 if tipo_gas in gasolina:
-                  co2_vehiculo="345 kg de CO2"
-                  print(co2_vehiculo)
+                    co2_vehiculo="345 kg de CO2"
+                    print(co2_vehiculo)
+                    users_co2["co2"]=co2_vehiculo
                 else:
                     print("Ese vehículo no está disponible")
                   
             elif vehiculo_tipo=="2":
-              for tipo in electrico:
-                print(tipo)
-              tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
-              if tipo_electrico in electrico:
-                co2_vehiculo="172 kg de CO2"
-                print(co2_vehiculo)
-              else:
-                print("Ese vehículo no está disponible")
+                for tipo in electrico:
+                    print(tipo)
+                tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+                if tipo_electrico in electrico:
+                    co2_vehiculo="172 kg de CO2"
+                    print(co2_vehiculo)
+                    users_co2["co2"]=co2_vehiculo
+                else:
+                    print("Ese vehículo no está disponible")
               
             elif vehiculo_tipo=="3":
-              co2_vehiculo="172 kg de CO2"
-              print(co2_vehiculo)
-              
+                co2_vehiculo="172 kg de CO2"
+                print(co2_vehiculo)
+                users_co2["co2"]=co2_vehiculo
             else:
-              print("Esa no es una opción.")
+                print("Esa no es una opción.")
               
         elif vehiculo_lower=="no":
             print("""
@@ -105,33 +108,38 @@ while main_while:
     -----------------
     Elija una opción: """)
             if transporte_tipo=="1":
-              for tipo in transporte:
-                print(tipo)
-              tipo_gas=input("¿Qué tipo de vehículo utiliza?")
-              if tipo_gas in transporte:
-                co2_vehiculo="345 kg de CO2"
-                print(co2_vehiculo)
-              else:
-                print("Ese vehículo no está disponible")
+                for tipo in transporte:
+                    print(tipo)
+                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+                if tipo_gas in transporte:
+                    co2_vehiculo="345 kg de CO2"
+                    print(co2_vehiculo)
+                    users_co2["co2"]=co2_vehiculo
+                else:
+                    print("Ese vehículo no está disponible")
                   
             elif transporte_tipo=="2":
-              for tipo in transporte:
-                print(tipo)
-              tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
-              if tipo_electrico in transporte:
-                co2_vehiculo="172 kg de CO2"
-                print(co2_vehiculo)
-              else:
-                print("Ese vehículo no está disponible")
+                for tipo in transporte:
+                    print(tipo)
+                tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+                if tipo_electrico in transporte:
+                    co2_vehiculo="172 kg de CO2"
+                    print(co2_vehiculo)
+                    users_co2["co2"]=co2_vehiculo
+                else:
+                    print("Ese vehículo no está disponible")
               
             elif transporte_tipo=="3":
-              co2_vehiculo="172 kg de CO2"
-              print(co2_vehiculo)
-              
+                co2_vehiculo="172 kg de CO2"
+                print(co2_vehiculo)
+                users_co2["co2"]=co2_vehiculo
             else:
-              print("Esa no es una opción.")
+                print("Esa no es una opción.")
         else:
-          print("Esa no es una opción.")
+            print("Esa no es una opción.")
+        print(f"""
+        Usuario: {users_co2["usuario"]}
+        CO2: {{users_co2["co2"]}""")
     elif main_opcion=="3":
         print("""
                         -----------------------------------
@@ -160,34 +168,34 @@ while main_while:
 ....................................................................................................
 """)
     elif main_opcion=="5":
-      print("Objetos que dejan mayor Huella de Carbono")
-      for chingadera in objetos:
-        print(chingadera)
+        print("Objetos que dejan mayor Huella de Carbono")
+        for chingadera in objetos:
+            print(chingadera)
     elif main_opcion == "6":
-      print("Observa los usuarios registrados")
-      for usuario in usuarios:
-        print(usuario)
-      editar_usuarios=input(f"""
+        print("Observa los usuarios registrados")
+        for usuario in usuarios:
+            print(usuario)
+        editar_usuarios=input(f"""
       ¿Deseas "agregar" o "eliminar" algún usuario?
       Puedes escribir las palabras entre "" para confimar
       Puedes escribir "exit" para salir""")
-      editar_usuarios_lower=editar_usuarios.lower()
-      if editar_usuarios_lower=="agregar":
-        add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
-        usuarios.append(add_usuario)
-        print("Esta es la lista con el usuario agregado: ")
-        for usuario in usuarios:
-          print(usuario, end=", ")
-      elif editar_usuarios_lower=="eliminar":
-        del_usuario=input("Escribe el usuario que quieres eliminar: ")
-        if del_usuario in usuarios:
-          usuarios.remove(del_usuario)
-          print(f"Se ha eliminado {del_usuario} de los usuarios:")
-          for usuario in usuarios:
-            print(usuario)
-      elif editar_usuarios_lower=="exit":
-        continue
-      else:
+        editar_usuarios_lower=editar_usuarios.lower()
+        if editar_usuarios_lower=="agregar":
+            add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
+            usuarios.append(add_usuario)
+            print("Esta es la lista con el usuario agregado: ")
+            for usuario in usuarios:
+                print(usuario, end=", ")
+        elif editar_usuarios_lower=="eliminar":
+            del_usuario=input("Escribe el usuario que quieres eliminar: ")
+            if del_usuario in usuarios:
+                usuarios.remove(del_usuario)
+                print(f"Se ha eliminado {del_usuario} de los usuarios:")
+                for usuario in usuarios:
+                    print(usuario)
+        elif editar_usuarios_lower=="exit":
+            continue
+        else:
         print("Esa no es una opción.")
     else:
         print("Lo sentimos... Esa opcion no esta disponible.")
