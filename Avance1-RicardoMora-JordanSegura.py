@@ -89,7 +89,7 @@ while main_while:
             transporte_tipo=input("""
 1. Gasolina
 2. Eléctrico
-3. Híbrido\n""")
+3. Híbrido""")
             if transporte_tipo=="1":
               for tipo in transporte:
                 print(tipo)
