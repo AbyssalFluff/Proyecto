@@ -147,7 +147,7 @@ while main_while:
       print("Objetos que dejan mayor Huella de Carbono")
       for chingadera in objetos:
         print(chingadera)
-    elif man_opcion=="6":
+    elif main_opcion=="6":
       for nombre in usuarios:
         print(nombre, sep=", ")
     else:
