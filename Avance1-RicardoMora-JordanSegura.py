@@ -138,7 +138,7 @@ while main_while:
         else:
             print("Esa no es una opción.")
         print(f"""
-        Aquí esta tus datos {nombre}
+        Aquí están tus datos {nombre}
         Usuario: {users_co2["usuario"]}
         CO2: {users_co2["co2"]}""")
     elif main_opcion=="3":
