@@ -148,6 +148,7 @@ while main_while:
       for chingadera in objetos:
         print(chingadera)
     elif man_opcion=="6":
-      print(nombres, sep=", ")
+      for nombre in usuarios:
+        print(nombre, sep=", ")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
