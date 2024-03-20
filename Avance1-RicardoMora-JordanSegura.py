@@ -15,12 +15,17 @@ while main_while:
         |Opciones de Menú:|
         -------------------""") 
     print("""
-        0. Salir
-        1. ¿Que es la Huella de Carbono?
-        2. Calcula tu Huella de Carbono
-        3. ¿Como mejorar tu Huella de Carbono?
-        4. ¿Cual es el impacto ambiental de la Huella de Carbono?""")
-    main_opcion=input("\nA donde quieres ir? ")
+        *****************************************************************
+        * 0. Salir                                                      *
+        * 1. ¿Que es la Huella de Carbono?                              *
+        * 2. Calcula tu Huella de Carbono                               *
+        * 3. ¿Como mejorar tu Huella de Carbono?                        *
+        * 4. ¿Cual es el impacto ambiental de la Huella de Carbono?     *
+        *****************************************************************
+        """)
+    main_opcion=input("""
+        A donde quieres ir? 
+        """)
     if main_opcion=="0":
         print("Gracias por ser uno más en ayudar el bienestar del Mundo.")
         main_while=False
