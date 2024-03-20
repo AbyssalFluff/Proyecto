@@ -168,7 +168,7 @@ while main_while:
         del_usuario=input("Escribe el usuario que quieres eliminar: ")
         if del_usuario in usuarios:
           usuarios.remove(del_usuario)
-          print(f"\Se ha eliminado {del_usuario} de los usuarios:")
+          print(f"Se ha eliminado {del_usuario} de los usuarios:")
           for usuario in usuarios:
             print(usuario)
       elif editar_usuarios_lower=="exit":
