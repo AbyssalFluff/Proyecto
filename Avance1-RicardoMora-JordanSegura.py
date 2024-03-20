@@ -23,6 +23,7 @@ while main_while:
         * 3. ¿Como mejorar tu Huella de Carbono?                        *
         * 4. ¿Cual es el impacto ambiental de la Huella de Carbono?     *
         * 5. Objetos que dejan mayor Huella de Carbono                  *
+        * 6. Observar los usuarios registrados                          *
         *****************************************************************
         """)
     main_opcion=input("""
@@ -146,5 +147,7 @@ while main_while:
       print("Objetos que dejan mayor Huella de Carbono")
       for chingadera in objetos:
         print(chingadera)
+    elif man_opcion=="6":
+      print(nombres, sep=", ")
     else:
         print("\nLo sentimos... Esa opcion no esta disponible.")
