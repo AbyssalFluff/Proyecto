@@ -81,7 +81,7 @@ while main_while:
                     print("Ese vehículo no está disponible")
                   
             elif vehiculo_tipo=="2":
-              print("\t\t..........................................")
+                print("\t\t..........................................")
                 for tipo in electrico:
                     print(f"\t{tipo}")
                     print("\t..........................................")
