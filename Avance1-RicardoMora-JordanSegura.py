@@ -28,8 +28,7 @@ while main_while:
         *****************************************************************
         """)
     main_opcion=input("""
-        A donde quieres ir? 
-        """)
+        A donde quieres ir?  """)
     if main_opcion=="0":
         print("Gracias por ser uno más en ayudar el bienestar del Mundo.")
         main_while=False
@@ -189,7 +188,7 @@ while main_while:
             print(f"\t{chingadera}")
         print("\t......................")
     elif main_opcion == "6":
-        print("Observa los usuarios registrados")
+        print("\tObserva los usuarios registrados")
         for usuario in usuarios:
             print(usuario)
         editar_usuarios=input(f"""
@@ -200,18 +199,18 @@ while main_while:
         .......................................................\n""")
         editar_usuarios_lower=editar_usuarios.lower()
         if editar_usuarios_lower=="agregar":
-            add_usuario=input("Ingrese el nombre del usuario que desea agregar: ")
+            add_usuario=input("\tIngrese el nombre del usuario que desea agregar: ")
             usuarios.append(add_usuario)
-            print("\nEsta es la lista con el usuario agregado: ")
+            print("\tEsta es la lista con el usuario agregado: ")
             for usuario in usuarios:
-                print(usuario, end=", ")
+                print("\t",usuario)
         elif editar_usuarios_lower=="eliminar":
-            del_usuario=input("Escribe el usuario que quieres eliminar: ")
+            del_usuario=input("\tEscribe el usuario que quieres eliminar: ")
             if del_usuario in usuarios:
                 usuarios.remove(del_usuario)
                 print(f"\nSe ha eliminado {del_usuario} de los usuarios:")
                 for usuario in usuarios:
-                    print(usuario)
+                    print("\t",usuario)
         elif editar_usuarios_lower=="exit":
             continue
         else:
