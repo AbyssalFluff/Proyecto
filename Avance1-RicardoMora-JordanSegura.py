@@ -75,7 +75,7 @@ while main_while:
                 for tipo in gasolina:
                     print(f"\t{tipo}")
                 print("\t..........")
-                tipo_gas=input("\t¿Escriba el tipo de vehículo que utiliza?")
+                tipo_gas=input("\t¿Escriba el tipo de vehículo que utiliza?  ")
                 if tipo_gas in gasolina:
                     co2_vehiculo="345 kg de CO2"
                     print(f"\t{co2_vehiculo}")
@@ -88,7 +88,7 @@ while main_while:
                 for tipo in electrico:
                     print(f"\t{tipo}")
                 print("\t...........")
-                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?\n")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?  ")
                 if tipo_electrico in electrico:
                     co2_vehiculo="172 kg de CO2"
                     print(f"\t{co2_vehiculo}")
@@ -120,7 +120,7 @@ while main_while:
                 for tipo in transporte:
                     print(f"\ttipo")
                 print("\t..........")
-                tipo_gas=input("\t¿Qué tipo de vehículo utiliza?")
+                tipo_gas=input("\t¿Qué tipo de vehículo utiliza?  ")
                 if tipo_gas in transporte:
                     co2_vehiculo="345 kg de CO2"
                     print(f"\t{co2_vehiculo}")
@@ -131,9 +131,9 @@ while main_while:
             elif transporte_tipo=="2":
                 print("\t..........")
                 for tipo in transporte:
-                    print(tipo)
+                    print(f"\ttipo")
                 print("\t..........")
-                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?\n")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?  ")
                 if tipo_electrico in transporte:
                     co2_vehiculo="172 kg de CO2"
                     print(f"\t{co2_vehiculo}")
