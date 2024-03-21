@@ -118,7 +118,7 @@ while main_while:
             if transporte_tipo=="1":
                 print("\t..........")
                 for tipo in transporte:
-                    print(f"\ttipo")
+                    print(f"\t{tipo}")
                 print("\t..........")
                 tipo_gas=input("\t¿Qué tipo de vehículo utiliza?  ")
                 if tipo_gas in transporte:
@@ -131,7 +131,7 @@ while main_while:
             elif transporte_tipo=="2":
                 print("\t..........")
                 for tipo in transporte:
-                    print(f"\ttipo")
+                    print(f"\t{tipo}")
                 print("\t..........")
                 tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?  ")
                 if tipo_electrico in transporte:
