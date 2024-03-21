@@ -48,10 +48,12 @@ while main_while:
 ....................................................................................................
 """)
     elif main_opcion=="2":
-        nombre=input("\nAntes de comenzar...\nEscribe tu nombre: ")
+        nombre=input("""
+    Antes de comenzar...\nEscribe tu nombre: """)
         usuarios.append(nombre)
         users_co2["usuario"]=nombre
-        vehiculo=input("¿Posee algún vehículo?\nSi/No\n")
+        vehiculo=input("""
+    ¿Posee algún vehículo?\nSi/No\n""")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
             print("""
@@ -69,7 +71,8 @@ while main_while:
             if vehiculo_tipo=="1":
                 for tipo in gasolina:
                     print(tipo)
-                tipo_gas=input("¿Escriba el tipo de vehículo que utiliza?")
+                tipo_gas=input("""
+    ¿Escriba el tipo de vehículo que utiliza?""")
                 if tipo_gas in gasolina:
                     co2_vehiculo="345 kg de CO2"
                     print(co2_vehiculo)
