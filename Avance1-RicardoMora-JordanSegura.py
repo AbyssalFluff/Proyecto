@@ -169,9 +169,13 @@ while main_while:
 ....................................................................................................
 """)
     elif main_opcion=="5":
-        print("Objetos que dejan mayor Huella de Carbono")
+        print("\t\t..........................................")
+        print("\t\tObjetos que dejan mayor Huella de Carbono")
+        print("\t\t..........................................")
+        print("\n\t......................")
         for chingadera in objetos:
-            print(chingadera)
+            print(f"\t{chingadera}")
+        print("\t......................")
     elif main_opcion == "6":
         print("Observa los usuarios registrados")
         for usuario in usuarios:
