@@ -81,10 +81,11 @@ while main_while:
                     print("Ese vehículo no está disponible")
                   
             elif vehiculo_tipo=="2":
-                print("\t\t..........................................")
                 for tipo in electrico:
-                    print(f"\t{tipo}")
-                    print("\t..........................................")
+                    print(f"""
+                    .........................
+                    {tipo}
+                    .........................""")
                 tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
                 if tipo_electrico in electrico:
                     co2_vehiculo="172 kg de CO2"
