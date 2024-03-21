@@ -78,7 +78,7 @@ while main_while:
                 tipo_gas=input("\t¿Escriba el tipo de vehículo que utiliza?")
                 if tipo_gas in gasolina:
                     co2_vehiculo="345 kg de CO2"
-                    print(f"\tco2_vehiculo")
+                    print(f"\t{co2_vehiculo}")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
@@ -88,17 +88,17 @@ while main_while:
                 for tipo in electrico:
                     print(f"\t{tipo}")
                 print("\t...........")
-                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?    ")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?\n")
                 if tipo_electrico in electrico:
                     co2_vehiculo="172 kg de CO2"
-                    print(f"\tco2_vehiculo")
+                    print(f"\t{co2_vehiculo}")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
               
             elif vehiculo_tipo=="3":
                 co2_vehiculo="172 kg de CO2"
-                print(f"\tco2_vehiculo")
+                print(f"\t{co2_vehiculo}")
                 users_co2["co2"]=co2_vehiculo
             else:
                 print("\tEsa no es una opción.")
@@ -123,7 +123,7 @@ while main_while:
                 tipo_gas=input("\t¿Qué tipo de vehículo utiliza?")
                 if tipo_gas in transporte:
                     co2_vehiculo="345 kg de CO2"
-                    print(f"\tco2_vehiculo")
+                    print(f"\t{co2_vehiculo}")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
@@ -133,17 +133,17 @@ while main_while:
                 for tipo in transporte:
                     print(tipo)
                 print("\t..........")
-                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?\n")
                 if tipo_electrico in transporte:
                     co2_vehiculo="172 kg de CO2"
-                    print(f"\tco2_vehiculo")
+                    print(f"\t{co2_vehiculo}")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
               
             elif transporte_tipo=="3":
                 co2_vehiculo="172 kg de CO2"
-                print(f"\tco2_vehiculo")
+                print(f"\t{co2_vehiculo}")
                 users_co2["co2"]=co2_vehiculo
             else:
                 print("\tEsa no es una opción.")
