@@ -49,11 +49,13 @@ while main_while:
 """)
     elif main_opcion=="2":
         nombre=input("""
-    Antes de comenzar...\n\tEscribe tu nombre: """)
+    Antes de comenzar...
+    Escribe tu nombre: """)
         usuarios.append(nombre)
         users_co2["usuario"]=nombre
         vehiculo=input("""
-    ¿Posee algún vehículo?\n\tSi/No\n""")
+    ¿Posee algún vehículo?
+    Si/No\n""")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
             print("""
@@ -81,14 +83,13 @@ while main_while:
                     print("Ese vehículo no está disponible")
                   
             elif vehiculo_tipo=="2":
+                print("\t.................")
                 for tipo in electrico:
-                    print(f"""
-                    .........................
-                    {tipo}
-                    .........................""")
-                tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+                    print(f"\t{tipo}")
+                print("\t..................")
+                tipo_electrico=input("\n¿Qué tipo de vehículo utiliza?\n")
                 if tipo_electrico in electrico:
-                    co2_vehiculo="172 kg de CO2"
+                    co2_vehiculo="\n172 kg de CO2"
                     print(co2_vehiculo)
                     users_co2["co2"]=co2_vehiculo
                 else:
