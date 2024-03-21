@@ -71,12 +71,14 @@ while main_while:
     Elija una opción: """)
             print()
             if vehiculo_tipo=="1":
+                print("\t..........")
                 for tipo in gasolina:
-                    print(tipo)
+                    print(f"\t{tipo}")
+                print("\t..........")
                 tipo_gas=input("\t¿Escriba el tipo de vehículo que utiliza?")
                 if tipo_gas in gasolina:
-                    co2_vehiculo="\n\t345 kg de CO2"
-                    print(co2_vehiculo)
+                    co2_vehiculo="345 kg de CO2"
+                    print(f"\tco2_vehiculo")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
@@ -86,17 +88,17 @@ while main_while:
                 for tipo in electrico:
                     print(f"\t{tipo}")
                 print("\t...........")
-                tipo_electrico=input("\n\t¿Qué tipo de vehículo utiliza?\n")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?    ")
                 if tipo_electrico in electrico:
-                    co2_vehiculo="\n\t172 kg de CO2"
-                    print(co2_vehiculo)
+                    co2_vehiculo="172 kg de CO2"
+                    print(f"\tco2_vehiculo")
                     users_co2["co2"]=co2_vehiculo
                 else:
                     print("\tEse vehículo no está disponible")
               
             elif vehiculo_tipo=="3":
-                co2_vehiculo="\n\t172 kg de CO2"
-                print(co2_vehiculo)
+                co2_vehiculo="172 kg de CO2"
+                print(f"\tco2_vehiculo")
                 users_co2["co2"]=co2_vehiculo
             else:
                 print("\tEsa no es una opción.")
@@ -114,35 +116,39 @@ while main_while:
     -----------------
     Elija una opción: """)
             if transporte_tipo=="1":
+                print("\t..........")
                 for tipo in transporte:
-                    print(tipo)
-                tipo_gas=input("¿Qué tipo de vehículo utiliza?")
+                    print(f"\ttipo")
+                print("\t..........")
+                tipo_gas=input("\t¿Qué tipo de vehículo utiliza?")
                 if tipo_gas in transporte:
                     co2_vehiculo="345 kg de CO2"
-                    print(co2_vehiculo)
+                    print(f"\tco2_vehiculo")
                     users_co2["co2"]=co2_vehiculo
                 else:
-                    print("Ese vehículo no está disponible")
+                    print("\tEse vehículo no está disponible")
                   
             elif transporte_tipo=="2":
+                print("\t..........")
                 for tipo in transporte:
                     print(tipo)
-                tipo_electrico=input("¿Qué tipo de vehículo utiliza?")
+                print("\t..........")
+                tipo_electrico=input("\t¿Qué tipo de vehículo utiliza?")
                 if tipo_electrico in transporte:
                     co2_vehiculo="172 kg de CO2"
-                    print(co2_vehiculo)
+                    print(f"\tco2_vehiculo")
                     users_co2["co2"]=co2_vehiculo
                 else:
-                    print("Ese vehículo no está disponible")
+                    print("\tEse vehículo no está disponible")
               
             elif transporte_tipo=="3":
                 co2_vehiculo="172 kg de CO2"
-                print(co2_vehiculo)
+                print(f"\tco2_vehiculo")
                 users_co2["co2"]=co2_vehiculo
             else:
-                print("Esa no es una opción.")
+                print("\tEsa no es una opción.")
         else:
-            print("Esa no es una opción.")
+            print("\tEsa no es una opción.")
         print(f"""
         Aquí están tus datos {nombre}
         Usuario: {users_co2["usuario"]}
@@ -209,6 +215,6 @@ while main_while:
         elif editar_usuarios_lower=="exit":
             continue
         else:
-            print("Esa no es una opción.")
+            print("\tEsa no es una opción.")
     else:
-        print("Lo sentimos... Esa opcion no esta disponible.")
+        print("\tLo sentimos... Esa opcion no esta disponible.")
