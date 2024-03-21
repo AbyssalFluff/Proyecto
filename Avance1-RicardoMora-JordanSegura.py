@@ -49,11 +49,11 @@ while main_while:
 """)
     elif main_opcion=="2":
         nombre=input("""
-    Antes de comenzar...\nEscribe tu nombre: """)
+    Antes de comenzar...\n\tEscribe tu nombre: """)
         usuarios.append(nombre)
         users_co2["usuario"]=nombre
         vehiculo=input("""
-    ¿Posee algún vehículo?\nSi/No\n""")
+    ¿Posee algún vehículo?\n\tSi/No\n""")
         vehiculo_lower=vehiculo.lower()
         if vehiculo_lower=="si":
             print("""
