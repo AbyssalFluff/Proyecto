@@ -190,7 +190,7 @@ while main_while:
     elif main_opcion == "6":
         print("\tObserva los usuarios registrados")
         for usuario in usuarios:
-            print(usuario)
+            print(f"\tusuario")
         editar_usuarios=input(f"""
         .......................................................
         . ¿Deseas "agregar" o "eliminar" algún usuario?       .
@@ -204,14 +204,14 @@ while main_while:
             usuarios.append(add_usuario)
             print("\tEsta es la lista con el usuario agregado: ")
             for usuario in usuarios:
-                print("\t",usuario)
+                print(f"\t{usuario}")
         elif editar_usuarios_lower=="eliminar":
             del_usuario=input("\tEscribe el usuario que quieres eliminar: ")
             if del_usuario in usuarios:
                 usuarios.remove(del_usuario)
                 print(f"\nSe ha eliminado {del_usuario} de los usuarios:")
                 for usuario in usuarios:
-                    print("\t",usuario)
+                    print(f"\t{usuario}")
         elif editar_usuarios_lower=="exit":
             continue
         else:
