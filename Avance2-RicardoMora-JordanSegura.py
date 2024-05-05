@@ -50,23 +50,23 @@ area_trabajo.create_window(270,160,window=btn_4)
 #Text explicando que es la huella de carbono
 lb_info2 = tk.Label(pagina_principal, text="¿Qué es la huella de carbono?",
                     width=30, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(112,200,window=lb_info2)
+area_trabajo.create_window(112,230,window=lb_info2)
 
 lb_info3 = tk.Label(pagina_principal, text="La huella de carbono es una medida de la cantidad total de gases de efecto invernadero (GEI)",
                     width=75, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(350,260,window=lb_info3)
+area_trabajo.create_window(334,260,window=lb_info3)
 lb_info4 = tk.Label(pagina_principal, text="emitidos directa o indirectamente por un individuo, organización, evento, producto o servicio",
                     width=75, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(300,280,window=lb_info4)
+area_trabajo.create_window(326,280,window=lb_info4)
 lb_info5 = tk.Label(pagina_principal, text="a lo largo de su ciclo de vida.",
                     width=30, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(112,300,window=lb_info5)
+area_trabajo.create_window(109,300,window=lb_info5)
 lb_info6 = tk.Label(pagina_principal, text="La huella de carbono se expresa generalmente en términos de la cantidad de dióxido de carbono",
                     width=75, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(300,320,window=lb_info6)
+area_trabajo.create_window(344,320,window=lb_info6)
 lb_info7 = tk.Label(pagina_principal, text="equivalente (CO2e) emitido.",
                     width=30, height=1, font=("Arial", 12), bg="white")
-area_trabajo.create_window(112,340,window=lb_info7)
+area_trabajo.create_window(106,340,window=lb_info7)
 
 #Ejecutamos la pagina principal
 pagina_principal.mainloop()
