@@ -4,6 +4,7 @@
 #Importamos biblioteca tkinter al igual que modulos
 import tkinter as tk
 from tkinter import messagebox
+from modulo import *
 
 def nada():
     print("Hola")
