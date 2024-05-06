@@ -44,7 +44,7 @@ btn_3=tk.Button(pagina_principal, text="Dispositivos", command=huella_dispositiv
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,160,window=btn_3)
 #
-btn_4=tk.Button(pagina_principal, text="Lyrum", command=huella_agua,
+btn_4=tk.Button(pagina_principal, text="Agua", command=huella_agua,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,160,window=btn_4)
 

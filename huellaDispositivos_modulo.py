@@ -27,7 +27,7 @@ def ver_huellas():
     for i,huella in enumerate(huella_de_dispositivos):
         mensaje += f"""Huella N.{i+1}:
         Nombre: {huella.get("Nombre")}
-        Huella: {huella.get("Huella")} CO2\n\n"""
+        Huella: {huella.get("Huella")}Kg CO2\n\n"""
     messagebox.showinfo("Ver huellas",
                         f"{mensaje}")
     txt_nombre.delete(0, tk.END)
@@ -107,21 +107,21 @@ def huella_dispositivos():
     area_trabajo.create_window(360,150,window=txt_dispositivo)
     
     #Boton para calcular la huella
-    catch_btn=tk.Button(pagina_huelladispositivos, text="Calcular huella", command=calcular_huella,
+    btn_calcular=tk.Button(pagina_huelladispositivos, text="Calcular huella", command=calcular_huella,
                            bg="light grey", width=15, height=1, font=("Arial",12))
-    area_trabajo.create_window(170,220,window=catch_btn)
+    area_trabajo.create_window(170,220,window=btn_calcular)
 
     #Boton para ver los calculos guardados
-    view_btn=tk.Button(pagina_huelladispositivos, text="Ver huellas", command=ver_huellas,
+    btn_ver=tk.Button(pagina_huelladispositivos, text="Ver huellas", command=ver_huellas,
                            bg="light grey", width=15, height=1, font=("Arial", 12))
-    area_trabajo.create_window(330,220,window=view_btn)
+    area_trabajo.create_window(330,220,window=btn_ver)
 
     #Boton para buscar un calculo
-    search_btn=tk.Button(pagina_huelladispositivos, text="Buscar huella", command=buscar_huella,
+    btn_buscar=tk.Button(pagina_huelladispositivos, text="Buscar huella", command=buscar_huella,
                            bg="light grey", width=15, height=1, font=("Arial", 12))
-    area_trabajo.create_window(330,280,window=search_btn)
+    area_trabajo.create_window(330,280,window=btn_buscar)
 
     #Boton para eliminar un calculo
-    release_btn=tk.Button(pagina_huelladispositivos, text="Eliminar huella", command=eliminar_huella,
+    btn_elimnar=tk.Button(pagina_huelladispositivos, text="Eliminar huella", command=eliminar_huella,
                            bg="light grey", width=15, height=1, font=("Arial", 12))
-    area_trabajo.create_window(170,280,window=release_btn)
+    area_trabajo.create_window(170,280,window=btn_elimnar)
