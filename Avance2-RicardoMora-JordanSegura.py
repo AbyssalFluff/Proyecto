@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import messagebox
 from huellaCarros_modulo import *
 from huellahogar_modulo import *
+from huelladispositivos_modulo import *
 
 def nada():
     print("Hola")
@@ -41,7 +42,7 @@ btn_2=tk.Button(pagina_principal, text="Energia", command=huella_energia,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,120,window=btn_2)
 #
-btn_3=tk.Button(pagina_principal, text="Lyrum", command=nada,
+btn_3=tk.Button(pagina_principal, text="Dispositivos", command=huella_dispositivos,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,160,window=btn_3)
 #
