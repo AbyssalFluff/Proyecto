@@ -4,7 +4,7 @@
 #Importamos biblioteca tkinter al igual que modulos
 import tkinter as tk
 from tkinter import messagebox
-from modulo import *
+from huellaCarros_modulo import *
 
 def nada():
     print("Hola")
@@ -17,7 +17,7 @@ pagina_principal.title("EcoFriendly Clean Air")
 area_trabajo = tk.Canvas(pagina_principal, width=1200, height=720, bg="white")
 area_trabajo.pack()
 
-#Declaramos donde se abrira la pagina principal al ejecutarse
+#Declaramos donde se abrira la pagina al ejecutarse
 pagina_principal.geometry("1200x720+10+10")
 
 #Creamos un titulo dentro de la pagina por el diseño
@@ -32,7 +32,7 @@ area_trabajo.create_window(200,80,window=lb_info1)
 
 #Creamos botones que redirigen a otras paginas con diferentes funciones
 #
-btn_1=tk.Button(pagina_principal, text="Lyrum", command=nada,
+btn_1=tk.Button(pagina_principal, text="Lyrum", command=huella_carros,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,120,window=btn_1)
 #
