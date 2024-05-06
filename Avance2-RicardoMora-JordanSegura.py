@@ -11,7 +11,7 @@ def nada():
 
 #Creamos la pagina principal
 pagina_principal = tk.Tk()
-pagina_principal.title("Por ahora")
+pagina_principal.title("EcoFriendly Clean Air")
 
 #Creamos el area de trabajo
 area_trabajo = tk.Canvas(pagina_principal, width=1200, height=720, bg="white")
