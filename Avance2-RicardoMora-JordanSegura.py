@@ -5,11 +5,9 @@
 import tkinter as tk
 from tkinter import messagebox
 from huellaCarros_modulo import *
-from huellahogar_modulo import *
-from huelladispositivos_modulo import *
-
-def nada():
-    print("Hola")
+from huellaHogar_modulo import *
+from huellaDispositivos_modulo import *
+from huellaAgua_modulo import *
 
 #Creamos la pagina principal
 pagina_principal = tk.Tk()
@@ -46,7 +44,7 @@ btn_3=tk.Button(pagina_principal, text="Dispositivos", command=huella_dispositiv
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,160,window=btn_3)
 #
-btn_4=tk.Button(pagina_principal, text="Lyrum", command=nada,
+btn_4=tk.Button(pagina_principal, text="Lyrum", command=huella_agua,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,160,window=btn_4)
 
