@@ -32,11 +32,11 @@ area_trabajo.create_window(200,80,window=lb_info1)
 
 #Creamos botones que redirigen a otras paginas con diferentes funciones
 #
-btn_1=tk.Button(pagina_principal, text="Lyrum", command=huella_carros,
+btn_1=tk.Button(pagina_principal, text="Carro", command=huella_carros,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,120,window=btn_1)
 #
-btn_2=tk.Button(pagina_principal, text="Lyrum", command=nada,
+btn_2=tk.Button(pagina_principal, text="Cocinar", command=nada,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,120,window=btn_2)
 #
