@@ -75,7 +75,7 @@ def huella_dispositivos():
     global txt_nombre, txt_dispositivo
     #Creamos una nueva ventana ventana
     pagina_huelladispositivos = tk.Tk()
-    pagina_huelladispositivos.title("Calcula la huella de tu carro")
+    pagina_huelladispositivos.title("Calcula la huella de tus dispositivos")
 
     #Creamos el area de trabajo
     area_trabajo = tk.Canvas(pagina_huelladispositivos, width=500, height=400, bg="White")
