@@ -27,7 +27,7 @@ def ver_huellas():
     for i,huella in enumerate(huella_de_carros):
         mensaje += f"""Huella N.{i+1}:
         Nombre: {huella.get("Nombre")}
-        Huella: {huella.get("Huella")}CO2\n\n"""
+        Huella: {huella.get("Huella")} CO2\n\n"""
     messagebox.showinfo("Ver huellas",
                         f"{mensaje}")
     txt_nombre.delete(0, tk.END)
