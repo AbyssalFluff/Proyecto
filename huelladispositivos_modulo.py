@@ -85,7 +85,7 @@ def huella_dispositivos():
     pagina_huelladispositivos.geometry("480x350+1230+100")
 
     #Texto diciendo que hace la pagina
-    lb_info1=tk.Label(pagina_huelladispositivos, text="Aqui puedes calcular la huella de carbono de tu carro.",
+    lb_info1=tk.Label(pagina_huelladispositivos, text="Aqui puedes calcular la huella de carbono de tus dispositivos.",
                   width=44, height=1, font=("Arial", 12), bg="white")
     area_trabajo.create_window(192,20,window=lb_info1)
     lb_info2=tk.Label(pagina_huelladispositivos, text="Solo completa la información necesitada.",
