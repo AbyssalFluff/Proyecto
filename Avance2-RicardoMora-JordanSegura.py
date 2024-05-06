@@ -14,11 +14,11 @@ pagina_principal = tk.Tk()
 pagina_principal.title("EcoFriendly Clean Air")
 
 #Creamos el area de trabajo
-area_trabajo = tk.Canvas(pagina_principal, width=1200, height=720, bg="white")
+area_trabajo = tk.Canvas(pagina_principal, width=800, height=720, bg="white")
 area_trabajo.pack()
 
 #Declaramos donde se abrira la pagina al ejecutarse
-pagina_principal.geometry("1200x720+10+10")
+pagina_principal.geometry("800x720+10+10")
 
 #Creamos un titulo dentro de la pagina por el diseño
 lb_titulo = tk.Label(pagina_principal, text="Bienvenidos a EcoFriendly Clean Air!",
@@ -31,19 +31,19 @@ lb_info1 = tk.Label(pagina_principal, text="Utiliza estos botones para calcular 
 area_trabajo.create_window(200,80,window=lb_info1)
 
 #Creamos botones que redirigen a otras paginas con diferentes funciones
-#
+#Un boton que lleva a calcular la huella generada por carros
 btn_1=tk.Button(pagina_principal, text="Carro", command=huella_carros,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,120,window=btn_1)
-#
+#Un boton que lleva a calcular la huella generada por energia utilizada
 btn_2=tk.Button(pagina_principal, text="Energia", command=huella_energia,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,120,window=btn_2)
-#
+#Un boton que lleva a calcular la huella generada por dispositivos utilizados
 btn_3=tk.Button(pagina_principal, text="Dispositivos", command=huella_dispositivos,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(150,160,window=btn_3)
-#
+#Un boton que lleva a calcular la huella generada por agua consumida
 btn_4=tk.Button(pagina_principal, text="Agua", command=huella_agua,
                           bg="light grey", width=12, height=1, font=("Arial", 10))
 area_trabajo.create_window(270,160,window=btn_4)
@@ -68,6 +68,10 @@ area_trabajo.create_window(344,320,window=lb_info6)
 lb_info7 = tk.Label(pagina_principal, text="equivalente (CO2e) emitido.",
                     width=30, height=1, font=("Arial", 12), bg="white")
 area_trabajo.create_window(106,340,window=lb_info7)
+
+#Enseñamos una imagen en la pagina
+Imagen=tk.PhotoImage(file="co2.png")
+area_trabajo.create_image(450,300,anchor=tk.N,image=Imagen)
 
 #Ejecutamos la pagina principal
 pagina_principal.mainloop()

@@ -86,8 +86,8 @@ def huella_dispositivos():
 
     #Texto diciendo que hace la pagina
     lb_info1=tk.Label(pagina_huelladispositivos, text="Aqui puedes calcular la huella de carbono de tus dispositivos.",
-                  width=44, height=1, font=("Arial", 12), bg="white")
-    area_trabajo.create_window(192,20,window=lb_info1)
+                  width=50, height=1, font=("Arial", 12), bg="white")
+    area_trabajo.create_window(220,20,window=lb_info1)
     lb_info2=tk.Label(pagina_huelladispositivos, text="Solo completa la información necesitada.",
                   width=33, height=1, font=("Arial", 12), bg="white")
     area_trabajo.create_window(150,40,window=lb_info2)
@@ -101,7 +101,7 @@ def huella_dispositivos():
 
     lb_info4=tk.Label(pagina_huelladispositivos, text="Cuantos dispositivos tiene: ",
                   width=23, height=1, font=("Arial", 12), bg="white")
-    area_trabajo.create_window(122,140,window=lb_info4)
+    area_trabajo.create_window(114,140,window=lb_info4)
 
     txt_dispositivo=tk.Entry(pagina_huelladispositivos, font=("Arial", 12), width=18)
     area_trabajo.create_window(360,150,window=txt_dispositivo)

@@ -75,7 +75,7 @@ def huella_energia():
     global txt_nombre, txt_Energia
     #Creamos una nueva ventana ventana
     pagina_huellacasas = tk.Tk()
-    pagina_huellacasas.title("Calcula la huella de tu carro")
+    pagina_huellacasas.title("Calcula la huella de tu energia")
 
     #Creamos el area de trabajo
     area_trabajo = tk.Canvas(pagina_huellacasas, width=500, height=400, bg="White")
