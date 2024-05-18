@@ -1,1 +1,1 @@
-Pairs technical highschool Python proyecto.
+Python proyect in pairs for highschool.
