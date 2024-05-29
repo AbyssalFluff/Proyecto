@@ -5,40 +5,94 @@
 import tkinter as tk
 from tkinter import messagebox
 
+#Importamos otras bibliotecas
+import os
+import pickle
 
-huella_de_carros=[]
+#Definimos una clase para un objeto
+class huellaCarros:
+    huella_de_carros=[]
+
+    #Método - Constructor
+    def __init__(self,nombre,huella):
+        self.__nombre=nombre
+        self.__huella=huella
+
+    #Método - STR
+    def __str__(self):
+        return f"""Nombre: {self.__nombre}
+        Huella: {self.__huella} CO2"""
+
+    #Métodos - Get's y Set's
+    def get_nombre(self):
+        return f"{self.__nombre}"
+    def set_nombre(self,nombre):
+        self.__nombre=nombre
+        
+    def get_edad(self):
+        return f"{self.__huella}"
+    def set_edad(self,huella):
+        self.__huella=huella
+
+#Clase nueva para manipular archivos
+class huellaCarros_Archivo:
+    nombre_archivos="huellaCarros.txt"
+
+    @classmethod
+    def agregar_huellas(cls,huella_de_carros):
+        with open(cls.nombre_archivos,"wb")as archivo:
+            pickle.dump(huellaCarros.huella_de_carros,archivo)
+            
+    @classmethod
+    def listar_huellas(cls):
+        with open(cls.nombre_archivos,"rb")as archivo:
+            huellaCarros.huella_de_carros=pickle.load(archivo)
+            mensaje=""
+            for huella in huellaCarros.huella_de_carros:
+                mensaje+= f"""{huella}\n"""
+            messagebox.showinfo("Ver huellas",
+                                f"{mensaje}")
+    @classmethod
+    def cargar_huellas(cls):
+        with open(cls.nombre_archivos,"rb")as archivo:
+            huellaCarros.huella_de_carros=pickle.load(archivo)
+
+    @classmethod
+    def eliminar_huellas(cls):
+        os.remove(cls.nombre_archivos)
 
 #Funcion para calcular la huella
 def calcular_huella():
-    Nombre = txt_nombre.get()
     Combustible = txt_combustible.get()
     Combustible = int(Combustible)
     Huella = Combustible/2.40
-    registro = {"Nombre":Nombre, "Huella":Huella}
-    huella_de_carros.append(registro)
+    
+    #Creamos un objeto
+    huella=huellaCarros(txt_nombre.get(),Huella)
+
+    #Agregamos el objeto a la lista
+    huellaCarros.huella_de_carros.append(huella)
+
+    #Método nuevo para escribir la lista en el archivo
+    huellaCarros_Archivo.agregar_huellas(huellaCarros.huella_de_carros)
+
     messagebox.showinfo("Registro",
-                        f"Huella de {Nombre} registrada correctamente.")
+                        f"Huella de {txt_nombre.get()} registrada correctamente.")
     txt_nombre.delete(0, tk.END)
     txt_combustible.delete(0, tk.END)
 
 #Funcion para ver las huellas registradas
 def ver_huellas():
-    mensaje = ""
-    for i,huella in enumerate(huella_de_carros):
-        mensaje += f"""Huella N.{i+1}:
-        Nombre: {huella.get("Nombre")}
-        Huella: {huella.get("Huella")}Kg CO2\n\n"""
-    messagebox.showinfo("Ver huellas",
-                        f"{mensaje}")
-    txt_nombre.delete(0, tk.END)
-    txt_combustible.delete(0, tk.END)
+    huellaCarros_Archivo.listar_huellas()
 
 #Funcion para buscar una huella registrada
 def buscar_huella():
+    #Guardar el archivo a la lista
+    huellaCarros_Archivo.cargar_huellas()
     bandera=False
     Nombre=txt_nombre.get()
-    for nombre in huella_de_carros:
-        if Nombre == nombre.get("Nombre"):
+    for nombre in huellaCarros.huella_de_carros:
+        if Nombre == nombre.get_nombre():
             bandera=True
     if bandera:
         messagebox.showinfo("Buscar huella",
@@ -52,13 +106,17 @@ def buscar_huella():
 
 #Funcion para eliminar una huella registrada
 def eliminar_huella():
+    #Guardar el archivo a la lista
+    huellaCarros_Archivo.cargar_huellas()
     bandera=False
     Nombre=txt_nombre.get()
-    for nombre in huella_de_carros:
-        if Nombre == nombre.get("Nombre"):
+    for nombre in huellaCarros.huella_de_carros:
+        if Nombre == nombre.get_nombre():
             bandera=True
-            indice=huella_de_carros.index(nombre)
-            del huella_de_carros[indice]
+            indice=huellaCarros.huella_de_carros.index(nombre)
+            del huellaCarros.huella_de_carros[indice]
+            #Guardar la lista a el archivo
+            huellaCarros_Archivo.agregar_huellas(huellaCarros.huella_de_carros)
     if bandera:
         messagebox.showinfo("Buscar huella",
                     f"Hemos eliminado tu huella {Nombre}.")
